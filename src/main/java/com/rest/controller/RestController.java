@@ -73,6 +73,16 @@ public class RestController {
 		return status1;
 	}
 	
+	
+	
+	@RequestMapping(value="/pet1/{petId}",method=RequestMethod.DELETE)
+	public @ResponseBody Object DeletePet(@PathVariable("petId") long petId,@RequestParam String name,@RequestParam String status){
+		Status status1  = new Status();
+		status1.setCode(204);
+		status1.setMessage("Pet Deleted successfully");
+		return status1;
+	}
+	
 	@RequestMapping(value = "/{id}", method = RequestMethod.POST)
 	public @ResponseBody
 	Object saveRoutingInfo(@PathVariable("id") String id,@RequestParam String ip) {

@@ -4,7 +4,8 @@ public class Status {
 
 	private int code;
 	private String message;
-
+	private String errorMessage;
+	
 	public Status() {
 	}
 
