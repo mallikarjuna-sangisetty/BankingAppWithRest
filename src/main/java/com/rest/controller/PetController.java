@@ -50,7 +50,7 @@ public class PetController {
 			p.setStatus(status);
 			
 		} catch (Exception e) {
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 		return p;
 	}
@@ -63,7 +63,7 @@ public class PetController {
 		try {
 
 			p = new Pet();
-			p.setCategory("Dog");
+			p.setCategory("Cat");
 			p.setId(petId);
 			p.setName("Puppy");
 			p.setStatus("Deleted");
