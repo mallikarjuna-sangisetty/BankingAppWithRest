@@ -76,7 +76,7 @@ public class RestController {
 	
 	
 	@RequestMapping(value="/pet1/{petId}",method=RequestMethod.DELETE)
-	public @ResponseBody Object DeletePet(@PathVariable("petId") long petId,@RequestParam String name,@RequestParam String status){
+	public @ResponseBody Object DeletePet(@PathVariable("petId") long petId,@RequestParam String name){
 		Status status1  = new Status();
 		status1.setCode(204);
 		status1.setMessage("Pet Deleted successfully");
