@@ -22,7 +22,7 @@ public class RestController {
 
 	private static final int RNUMBER_INVALDI_CODE = 105;
 	private static final String RNUMBER_INVALDI_MESSAGE = "Invalid Routing number";
-	
+	private static final int RNUMBER_NOTEXIST_DB_CODE1 = 103;
 	private static final int RNUMBER_NOTEXIST_DB_CODE = 102;
 	private static final String RNUMBER_NOTEXIST_DB_MESSAGE = "Routing number does not exist in db";
 	
